@@ -35,6 +35,7 @@ public class JwtUtil {
 
         return Jwts.builder()
                 .subject(user.getEmail())
+
                 .issuedAt(Date.from(now))
                 .expiration(Date.from(exp))
                 /* 👇  add the role here */
